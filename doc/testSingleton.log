@@ -1,0 +1,61 @@
+thread 0 at[firstThread:15] get s1 start
+classForSingleton1 start at addr: 0x60B1B0
+thread 1 at[secondThread:46] get s1 start
+classForSingleton1 end
+thread 0 at[getS1_1:7] get addr : 0x60B1B0
+thread 1 at[getS2_1:8] get addr : 0x60B1B0
+thread 0 at[getS1_1:10] get addr : 0x60B1B0
+thread 0 at[firstThread:17] get s1 end
+thread 1 at[getS2_1:11] get addr : 0x60B1B0
+thread 1 at[secondThread:48] get s1 end
+
+thread 1 at[secondThread:53] get s2 start
+classForSingleton2 start at addr: 0xA00008C0
+thread 0 at[firstThread:22] get s2 start
+classForSingleton2 start at addr: 0x980008C0
+classForSingleton2 end
+thread 0 at[getS1_2:15] get addr : 0x980008C0
+classForSingleton2 end
+thread 1 at[getS2_2:16] get addr : 0xA00008C0
+thread 1 at[getS2_2:19] get addr : 0xA00008C0
+thread 1 at[secondThread:55] get s2 end
+thread 0 at[getS1_2:18] get addr : 0x980008C0
+thread 0 at[firstThread:24] get s2 end
+
+thread 0 at[firstThread:29] get s3 start
+thread 1 at[secondThread:60] get s3 start
+classForSingleton3 start at addr: 0xA00008E0
+classForSingleton3 start at addr: 0x980008E0
+classForSingleton3 end
+thread 0 at[getS1_3:23] get addr : 0x980008E0
+classForSingleton3 end
+thread 1 at[getS2_3:24] get addr : 0xA00008E0
+thread 1 at[getS2_3:27] get addr : 0xA00008E0
+thread 1 at[secondThread:62] get s3 end
+thread 0 at[getS1_3:26] get addr : 0xA00008E0
+thread 0 at[firstThread:31] get s3 end
+
+thread 0 at[firstThread:36] get s4 start
+classForSingleton4 start at addr: 0x60B1D0
+thread 1 at[secondThread:67] get s4 start
+classForSingleton4 end
+thread 0 at[getS1_4:31] get addr : 0x60B1D0
+thread 1 at[getS2_4:33] get addr : 0x60B1D0
+thread 0 at[getS1_4:34] get addr : 0x60B1D0
+thread 0 at[firstThread:38] get s4 end
+thread 1 at[getS2_4:36] get addr : 0x60B1D0
+thread 1 at[secondThread:69] get s4 end
+
+
+thread 0 at[firstThread:29] get s3 start
+classForSingleton3 start at addr: 0xF80008E0
+thread 1 at[secondThread:60] get s3 start
+classForSingleton3 start at addr: 0x8E0
+classForSingleton3 end
+thread 0 at[getS1_3:23] get addr : 0xF80008E0
+classForSingleton3 end
+thread 1 at[getS2_3:24] get addr : 0x8E0
+thread 0 at[getS1_3:26] get addr : 0x8E0
+thread 0 at[firstThread:31] get s3 end
+thread 1 at[getS2_3:27] get addr : 0x8E0
+thread 1 at[secondThread:62] get s3 end

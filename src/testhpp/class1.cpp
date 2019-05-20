@@ -2,7 +2,8 @@
 
 #include "stdlib.h"
 #include "stdio.h"
-#include <unistd.h>
+
+classForSingleton3 *classForSingleton3::mclassForSingleton3 = 0;
 
 classForSingleton1 *classForSingleton1::getClassForSingleton1()
 {
@@ -22,28 +23,29 @@ classForSingleton2 *classForSingleton2::getClassForSingleton2()
 
 classForSingleton1::classForSingleton1()
 {
-    printf("classForSingleton1 start at addr:%X\n", this);
+    printf("classForSingleton1 start at addr: 0x%X\n", this);
     usleep(1000 * 1000);
     printf("classForSingleton1 end\n");
 }
 
 classForSingleton2::classForSingleton2()
 {
-    printf("classForSingleton2 start at addr:%X\n", this);
+    printf("classForSingleton2 start at addr: 0x%X\n", this);
     usleep(1000 * 1000);
     printf("classForSingleton2 end\n");
 }
 
 classForSingleton3::classForSingleton3()
 {
-    printf("classForSingleton3 start at addr:%X\n", this);
+    printf("classForSingleton3 start at addr: 0x%X\n", this);
+    mclassForSingleton3 = 0;
     usleep(1000 * 1000);
     printf("classForSingleton3 end\n");
 }
 
 classForSingleton4::classForSingleton4()
 {
-    printf("classForSingleton4 start at addr:%X\n", this);
+    printf("classForSingleton4 start at addr: 0x%X\n", this);
     usleep(1000 * 1000);
     printf("classForSingleton4 end\n");
 }
